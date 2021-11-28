@@ -1,5 +1,5 @@
 **CRIANDO PORTFÓLIO**
 
-Usando HTMLe CSS...
+**Usando HTMLe CSS...**
 
-**atualizando**...
+Primeira etapa finalizada, site conigurado e responsivo.

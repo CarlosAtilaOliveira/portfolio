@@ -36,6 +36,7 @@ header .menu-line{
 .container {
     display: flex;
     height: 100vh;
+    
 }
 .container .leftside {
     flex: 1;
@@ -48,8 +49,10 @@ header .menu-line{
     flex: 1;
     background-image: url(../images/hero.jpg);
     background-size: 100% auto;
-    background-position: center top;
-    background-repeat: no-repeat;
+    background-position: center top ;
+    background-size: cover;
+    
+    
 }
 .container .info {
     color: #FFF;
@@ -61,7 +64,7 @@ header .menu-line{
 }
 .container .info .name {
     font-weight: bold;
-    font-size: 60px;
+    font-size: 70px;
     margin-top: 10px;
     margin-bottom: 30px;
 }
@@ -91,4 +94,52 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
+    padding: 20px;
+    color: #FFF;
+    font-size: 11px;
+}
+footer a {
+    color: #FFF;
+}
+footer a:hover{
+    text-decoration: none;
+}
+
+@media(max-width: 850px) {
+    
+    header {
+        position: initial;
+        background-color: #3B576D;
+    }
+    header .menu-line {
+        background-color: #FFF;
+    }
+    .container {
+        flex-direction: column;   
+    }
+    .container .leftside {
+        flex: none;
+        padding: 30px 20px;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    footer {
+        position: initial;
+        color: #333;
+        font-size: 10px;
+    }
+    footer a {
+        color: #333;
+    }
+}
+@media(max-width: 450px){
+    .container .leftside .info .name {
+        font-size: 50px;
+    }
+    .container .leftside .buttons a {
+        display: block;
+        margin-right: 0px;
+        margin-top: 20px;
+    }
 }
